@@ -65,13 +65,26 @@ body{
 }
 
 .sidebar li{
-    height: 50%;
-    background: red;
-    margin: 10px;
+    height: 50px;
+    margin-top: 10px;
     list-style: none;
     display: flex;
     align-items: center;
 
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+    
+}
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    
 }
 
 .sidebar header{
@@ -119,5 +132,27 @@ header .image-text .header-text{
     border-radius: 20%;
     color: var(--sidebar-color);
     font-size: 20px;
+}
+
+
+.sidebar .search-box{
+    background: var(--primary-color-light);
 
 }
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: var(--primary-color-light);
+
+}
+
+.sidebar li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
